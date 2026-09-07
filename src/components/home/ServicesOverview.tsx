@@ -12,10 +12,6 @@ const services = [
       'Navigating Sri Lanka\'s planning process can be complex. We manage every step — from initial consultation and drawing preparation to liaising with Local Authorities, UDA, NHDA, and Coastal Zone Management on your behalf.',
     bullets: ['Local Authority submissions', 'UDA & NHDA approvals', 'Coastal zone compliance', 'Progress monitoring'],
     href: '/services/plan-approvals',
-    accent: 'blue',
-    iconBg: 'bg-blue-50 border-blue-200',
-    iconColor: 'text-blue-600',
-    pillColor: 'bg-blue-600',
   },
   {
     icon: Home,
@@ -25,10 +21,6 @@ const services = [
       'Premium property sales, acquisitions, and investment advisory across Sri Lanka\'s Southern and Western coastlines. We connect buyers with exceptional properties — villas, land, houses, apartments, and commercial assets.',
     bullets: ['Residential & commercial sales', 'Investment property advisory', 'Property valuations', 'Due diligence & market analysis'],
     href: '/properties',
-    accent: 'gold',
-    iconBg: 'bg-gold-50 border-gold-200',
-    iconColor: 'text-gold-600',
-    pillColor: 'bg-gold-500',
   },
   {
     icon: Building2,
@@ -38,10 +30,6 @@ const services = [
       'End-to-end holiday rental management so you earn maximum income with zero hassle. We handle everything from listing setup and dynamic pricing to guest communication, cleaning, maintenance, and monthly financial reports.',
     bullets: ['Airbnb & Booking.com listings', 'Guest management 24/7', 'Professional cleaning & upkeep', 'Monthly income reporting'],
     href: '/services/property-management',
-    accent: 'emerald',
-    iconBg: 'bg-emerald-50 border-emerald-200',
-    iconColor: 'text-emerald-600',
-    pillColor: 'bg-emerald-600',
   },
   {
     icon: Scale,
@@ -51,10 +39,6 @@ const services = [
       'Property law in Sri Lanka — especially for foreign buyers — requires specialist expertise. Our legal team handles title deed verification, sale agreements, foreign ownership structures, lease drafting, and regulatory compliance.',
     bullets: ['Title deed & due diligence', 'Sale & purchase agreements', 'Foreign ownership advisory', 'Lease agreement drafting'],
     href: '/services/legal-consultation',
-    accent: 'purple',
-    iconBg: 'bg-purple-50 border-purple-200',
-    iconColor: 'text-purple-600',
-    pillColor: 'bg-purple-600',
   },
   {
     icon: PenTool,
@@ -64,10 +48,6 @@ const services = [
       'From your first sketch to permit-ready drawings, our architectural team brings creative vision and technical precision. We design properties that respond to the tropical climate, local culture, and the stunning Sri Lankan landscape.',
     bullets: ['Concept design & 3D visualisation', 'Detailed architectural drawings', 'Interior & landscape design', 'Structural engineering support'],
     href: '/services/architectural-support',
-    accent: 'orange',
-    iconBg: 'bg-orange-50 border-orange-200',
-    iconColor: 'text-orange-600',
-    pillColor: 'bg-orange-500',
   },
   {
     icon: HardHat,
@@ -77,10 +57,6 @@ const services = [
       'Full-service construction management from foundation to final handover. Our experienced team delivers high-quality villas, commercial buildings, and renovation projects across Southern Sri Lanka — on time and within budget.',
     bullets: ['New villa & house construction', 'Commercial & hospitality builds', 'Renovation & extension projects', 'Quality assurance & inspections'],
     href: '/services/construction',
-    accent: 'red',
-    iconBg: 'bg-red-50 border-red-200',
-    iconColor: 'text-red-600',
-    pillColor: 'bg-red-600',
   },
 ];
 
@@ -96,19 +72,19 @@ const ServicesOverview: React.FC = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-          {services.map(({ icon: Icon, number, title, description, bullets, href, iconBg, iconColor, pillColor }) => (
+          {services.map(({ icon: Icon, number, title, description, bullets, href }) => (
             <div
               key={title}
               className="group bg-white rounded-sm shadow-card border border-beige-200 overflow-hidden card-hover flex flex-col"
             >
               {/* Top accent bar */}
-              <div className={`h-1 w-full ${pillColor}`} />
+              <div className="h-1 w-full bg-gold-500" />
 
               <div className="p-7 flex flex-col flex-1">
                 {/* Header row */}
                 <div className="flex items-start justify-between mb-5">
-                  <div className={`w-14 h-14 rounded-sm border-2 flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 ${iconBg}`}>
-                    <Icon size={26} className={iconColor} />
+                  <div className="w-14 h-14 rounded-sm border-2 border-gold-200 bg-gold-50 flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <Icon size={26} className="text-gold-600" />
                   </div>
                   <span className="font-serif text-5xl font-bold text-beige-300 leading-none select-none">
                     {number}
@@ -116,7 +92,7 @@ const ServicesOverview: React.FC = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className={`font-serif font-bold text-navy-900 text-xl mb-3 group-hover:${iconColor} transition-colors`}>
+                <h3 className="font-serif font-bold text-navy-900 text-xl mb-3 group-hover:text-gold-600 transition-colors">
                   {title}
                 </h3>
 
@@ -129,7 +105,7 @@ const ServicesOverview: React.FC = () => {
                 <ul className="space-y-2 mb-6 flex-1">
                   {bullets.map((b) => (
                     <li key={b} className="flex items-center gap-2.5 text-sm text-navy-700">
-                      <CheckCircle size={14} className={`flex-shrink-0 ${iconColor}`} />
+                      <CheckCircle size={14} className="flex-shrink-0 text-gold-600" />
                       {b}
                     </li>
                   ))}
@@ -138,7 +114,7 @@ const ServicesOverview: React.FC = () => {
                 {/* CTA */}
                 <Link
                   to={href}
-                  className={`flex items-center gap-2 text-sm font-semibold ${iconColor} group-hover:gap-3 transition-all duration-200 mt-auto pt-5 border-t border-beige-200`}
+                  className="flex items-center gap-2 text-sm font-semibold text-gold-600 group-hover:gap-3 transition-all duration-200 mt-auto pt-5 border-t border-beige-200"
                 >
                   Learn More <ArrowRight size={14} />
                 </Link>
