@@ -37,7 +37,7 @@ const CTABanner: React.FC = () => {
             href="https://wa.me/94770000000"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-semibold rounded-sm hover:bg-green-600 transition-colors text-base"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition-colors text-base"
           >
             <Phone size={18} /> WhatsApp Us
           </a>

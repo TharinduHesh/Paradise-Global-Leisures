@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   fullWidth = false,
 }) => {
-  const baseClasses = 'inline-flex items-center justify-center gap-2 font-semibold rounded-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2';
+  const baseClasses = 'inline-flex items-center justify-center gap-2 font-semibold rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2';
 
   const variantClasses = {
     primary: 'bg-gold-500 text-white hover:bg-gold-600 hover:shadow-gold hover:-translate-y-0.5 active:translate-y-0',

@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={`px-5 py-2 rounded-sm text-sm font-semibold capitalize transition-all ${filter === f ? 'bg-navy-900 text-white shadow-navy' : 'bg-white border border-beige-200 text-navy-600 hover:border-gold-300'}`}
+                className={`px-5 py-2 rounded-md text-sm font-semibold capitalize transition-all ${filter === f ? 'bg-navy-900 text-white shadow-navy' : 'bg-white border border-beige-200 text-navy-600 hover:border-gold-300'}`}
               >
                 {f === 'all' ? 'All Projects' : f.charAt(0).toUpperCase() + f.slice(1)}
               </button>

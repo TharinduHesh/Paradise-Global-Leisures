@@ -244,13 +244,13 @@ const PropertyDetails: React.FC = () => {
                     href={`https://wa.me/94770000000?text=I'm interested in ${encodeURIComponent(property.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-green-500 text-white text-sm font-semibold rounded-sm hover:bg-green-600 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-green-500 text-white text-sm font-semibold rounded-md hover:bg-green-600 transition-colors"
                   >
                     <MessageCircle size={15} /> WhatsApp
                   </a>
                   <a
                     href="tel:+94770000000"
-                    className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-navy-900 text-white text-sm font-semibold rounded-sm hover:bg-navy-800 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-navy-900 text-white text-sm font-semibold rounded-md hover:bg-navy-800 transition-colors"
                   >
                     <Phone size={15} /> Call Us
                   </a>

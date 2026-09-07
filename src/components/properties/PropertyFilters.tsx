@@ -45,7 +45,7 @@ const PropertyFilters: React.FC<PropertyFiltersProps> = ({ filters, onChange, on
         {/* Buy / Rent */}
         <div>
           <label className="block text-xs font-medium text-navy-500 mb-1.5 uppercase tracking-wide">Type</label>
-          <div className="flex rounded-sm overflow-hidden border border-beige-300">
+          <div className="flex rounded-md overflow-hidden border border-beige-300">
             {(['all', 'sale', 'rent'] as const).map((type) => (
               <button
                 key={type}
@@ -122,7 +122,7 @@ const PropertyFilters: React.FC<PropertyFiltersProps> = ({ filters, onChange, on
           <label className="block text-xs font-medium text-navy-500 mb-1.5 uppercase tracking-wide">Beachfront</label>
           <button
             onClick={() => update('isBeachfront', !filters.isBeachfront)}
-            className={`w-full flex items-center justify-center gap-2 py-2.5 border rounded-sm text-sm font-semibold transition-colors ${filters.isBeachfront ? 'border-gold-500 bg-gold-50 text-gold-700' : 'border-beige-300 bg-white text-navy-500 hover:border-gold-300'}`}
+            className={`w-full flex items-center justify-center gap-2 py-2.5 border rounded-md text-sm font-semibold transition-colors ${filters.isBeachfront ? 'border-gold-500 bg-gold-50 text-gold-700' : 'border-beige-300 bg-white text-navy-500 hover:border-gold-300'}`}
           >
             <Waves size={14} />
             {filters.isBeachfront ? 'Beachfront ✓' : 'Beachfront'}

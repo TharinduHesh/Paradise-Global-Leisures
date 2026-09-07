@@ -117,7 +117,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
             href={`https://wa.me/94770000000?text=I'm interested in ${encodeURIComponent(property.name)} in ${property.location}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-4 py-2.5 bg-green-500 text-white text-sm font-semibold rounded-sm hover:bg-green-600 transition-colors"
+            className="flex items-center gap-1.5 px-4 py-2.5 bg-green-500 text-white text-sm font-semibold rounded-md hover:bg-green-600 transition-colors"
             title="Enquire on WhatsApp"
           >
             <MessageCircle size={14} />
