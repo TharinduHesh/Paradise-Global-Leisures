@@ -30,14 +30,14 @@ const CTABanner: React.FC = () => {
           <Link to="/properties" className="btn-primary text-base px-8 py-4">
             Explore Properties <ArrowRight size={18} />
           </Link>
-          <Link to="/contact" className="btn-primary text-base px-8 py-4">
+          <Link to="/contact" className="btn-outline text-base px-8 py-4">
             Get a Consultation <ArrowRight size={18} />
           </Link>
           <a
             href="https://wa.me/94770000000"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary text-base px-8 py-4"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition-colors text-base"
           >
             <Phone size={18} /> WhatsApp Us
           </a>
