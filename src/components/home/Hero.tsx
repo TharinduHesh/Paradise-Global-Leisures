@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-hero-pattern" />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 via-navy-900/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/55 via-navy-900/25 to-transparent" />
 
       {/* Gold accent line */}
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gold-gradient opacity-70" />
