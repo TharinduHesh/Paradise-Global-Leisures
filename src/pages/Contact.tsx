@@ -126,7 +126,7 @@ const Contact: React.FC = () => {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/94770000000"
+                  href="https://wa.me/94751668705"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex gap-4 bg-green-50 p-5 rounded-sm shadow-card border border-green-200 hover:border-green-400 transition-colors group"
@@ -283,10 +283,10 @@ const Contact: React.FC = () => {
               <div className="h-72 bg-gradient-to-br from-beige-100 to-beige-200 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin size={50} className="text-gold-400 mx-auto mb-3" />
-                  <p className="font-serif text-navy-800 text-xl font-semibold">Habaraduwa, Koggala</p>
-                  <p className="text-navy-500 text-sm mt-1">Southern Province, Sri Lanka</p>
+                  <p className="font-serif text-navy-800 text-xl font-semibold">Kandy &amp; Colombo</p>
+                  <p className="text-navy-500 text-sm mt-1">Sri Lanka</p>
                   <a
-                    href="https://maps.google.com/?q=Habaraduwa+Koggala+Sri+Lanka"
+                    href="https://maps.google.com/?q=Kandy+Colombo+Sri+Lanka"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 btn-primary inline-flex text-sm"
