@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from 'lucide-react';
-import { FileCheck, Home, Building2, Scale, PenTool, HardHat } from 'lucide-react';
+import { FileCheck, Home, Building2, Scale, PenTool, HardHat, ShieldCheck } from 'lucide-react';
 import CTABanner from '../components/home/CTABanner';
 import { services } from '../data/services';
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
-  FileCheck, Home, Building2, Scale, PenTool, HardHat
+  FileCheck, Home, Building2, Scale, PenTool, HardHat, ShieldCheck
 };
 
 const Services: React.FC = () => {

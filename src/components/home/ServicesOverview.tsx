@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileCheck, Home, Building2, Scale, PenTool, HardHat, ArrowRight, CheckCircle } from 'lucide-react';
+import { FileCheck, Home, Building2, Scale, PenTool, HardHat, ShieldCheck, ArrowRight, CheckCircle } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 
 const services = [
@@ -57,6 +57,15 @@ const services = [
       'Full-service construction management from foundation to final handover. Our experienced team delivers high-quality villas, commercial buildings, and renovation projects across Southern Sri Lanka — on time and within budget.',
     bullets: ['New villa & house construction', 'Commercial & hospitality builds', 'Renovation & extension projects', 'Quality assurance & inspections'],
     href: '/services/construction',
+  },
+  {
+    icon: ShieldCheck,
+    number: '07',
+    title: 'Cyber Security Services',
+    description:
+      'Protect your business, customer information, and digital operations with practical cyber security solutions designed to reduce risk and strengthen resilience against evolving threats.',
+    bullets: ['Security risk assessments', 'Network & endpoint protection', 'Vulnerability assessments', 'Incident response support'],
+    href: '/services/cyber-security',
   },
 ];
 

@@ -116,6 +116,21 @@ export const services: Service[] = [
       { step: 7, title: 'Handover', description: 'Final walkthrough and key handover', icon: 'Key' },
     ],
   },
+  {
+    id: '7',
+    title: 'Cyber Security Services',
+    description: 'Professional cyber security solutions that protect your business, digital assets, customer information, and online operations from evolving threats.',
+    icon: 'ShieldCheck',
+    slug: 'cyber-security',
+    features: [
+      'Cyber security risk assessments',
+      'Network and endpoint protection',
+      'Vulnerability assessments',
+      'Data protection and access control',
+      'Security awareness training',
+      'Incident response and recovery support',
+    ],
+  },
 ];
 
 export const projects: Project[] = [

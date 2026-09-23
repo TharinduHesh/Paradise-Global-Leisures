@@ -54,6 +54,7 @@ const Footer: React.FC = () => {
                 { label: 'Legal Consultation', href: '/services/legal-consultation' },
                 { label: 'Architectural Support', href: '/services/architectural-support' },
                 { label: 'Construction', href: '/services/construction' },
+                { label: 'Cyber Security Services', href: '/services/cyber-security' },
               ].map((item) => (
                 <li key={item.href}>
                   <Link

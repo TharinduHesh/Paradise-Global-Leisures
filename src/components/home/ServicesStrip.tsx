@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileCheck, Home, Building2, Scale, PenTool, HardHat, ArrowRight } from 'lucide-react';
+import { FileCheck, Home, Building2, Scale, PenTool, HardHat, ShieldCheck, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -39,6 +39,12 @@ const services = [
     short: 'Villas, renovations & project builds',
     href: '/services/construction',
   },
+  {
+    icon: ShieldCheck,
+    title: 'Cyber Security',
+    short: 'Protection for systems, data & operations',
+    href: '/services/cyber-security',
+  },
 ];
 
 const ServicesStrip: React.FC = () => {
@@ -48,7 +54,7 @@ const ServicesStrip: React.FC = () => {
       <div className="border-b border-white/10 py-3">
         <div className="container-custom flex items-center justify-between">
           <p className="text-gold-400 text-xs font-semibold uppercase tracking-[0.2em]">
-            Our 6 Core Services
+            Our 7 Core Services
           </p>
           <Link
             to="/services"
@@ -61,7 +67,7 @@ const ServicesStrip: React.FC = () => {
 
       {/* 6 service tiles */}
       <div className="container-custom">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 divide-x divide-y lg:divide-y-0 divide-white/10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 divide-x divide-y lg:divide-y-0 divide-white/10">
           {services.map(({ icon: Icon, title, short, href }) => (
             <Link
               key={title}

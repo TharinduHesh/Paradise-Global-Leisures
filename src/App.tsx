@@ -13,6 +13,7 @@ import PlanApprovals from './pages/PlanApprovals';
 import LegalConsultation from './pages/LegalConsultation';
 import ArchitecturalSupport from './pages/ArchitecturalSupport';
 import Construction from './pages/Construction';
+import CyberSecurity from './pages/CyberSecurity';
 import Destinations from './pages/Destinations';
 import Contact from './pages/Contact';
 
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         <Route path="/services/legal-consultation" element={<LegalConsultation />} />
         <Route path="/services/architectural-support" element={<ArchitecturalSupport />} />
         <Route path="/services/construction" element={<Construction />} />
+        <Route path="/services/cyber-security" element={<CyberSecurity />} />
         <Route path="/properties" element={<Properties />} />
         <Route path="/properties/:slug" element={<PropertyDetails />} />
         <Route path="/destinations" element={<Destinations />} />

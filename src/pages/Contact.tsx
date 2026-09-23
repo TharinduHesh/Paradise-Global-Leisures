@@ -11,6 +11,7 @@ const serviceOptions = [
   'Legal Consultation',
   'Architectural Support',
   'Construction',
+  'Cyber Security Services',
   'General Enquiry',
 ];
 
