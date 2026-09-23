@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, MessageCircle, Send, CheckCircle, Clock } from 'lucide-react';
 import SectionHeader from '../components/ui/SectionHeader';
+import { saveContactEnquiry } from '../lib/firebase';
 
 const serviceOptions = [
   'Select a Service',
@@ -30,6 +31,8 @@ const locationOptions = [
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const [form, setForm] = useState({
     name: '', email: '', phone: '', service: '', propertyLocation: '', message: ''
   });
@@ -38,9 +41,20 @@ const Contact: React.FC = () => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError('');
+
+    try {
+      await saveContactEnquiry(form);
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Unable to save contact enquiry:', error);
+      setSubmitError('We could not send your enquiry. Please try again or contact us by phone.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -243,8 +257,14 @@ const Contact: React.FC = () => {
                         />
                       </div>
 
-                      <button type="submit" className="btn-primary w-full justify-center text-base py-4">
-                        <Send size={18} /> Send Enquiry
+                      {submitError && (
+                        <p role="alert" className="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                          {submitError}
+                        </p>
+                      )}
+
+                      <button type="submit" disabled={isSubmitting} className="btn-primary w-full justify-center text-base py-4 disabled:cursor-not-allowed disabled:opacity-60">
+                        <Send size={18} /> {isSubmitting ? 'Sending...' : 'Send Enquiry'}
                       </button>
 
                       <p className="text-navy-400 text-xs text-center">

@@ -30,3 +30,15 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Firebase / Firestore setup
+
+The Contact Us form saves enquiries to the `contactEnquiries` Firestore collection.
+
+1. Create a Firebase project and add a Web app in the Firebase console.
+2. Create a Firestore database for the project.
+3. Copy `.env.example` to `.env` and replace each placeholder with the Web app configuration values.
+4. Deploy the included rules with `firebase deploy --only firestore:rules`, or publish `firestore.rules` in the Firebase console Rules editor.
+5. Restart the Vite development server after creating or changing `.env`.
+
+Never commit `.env`; it is excluded by `.gitignore`.
