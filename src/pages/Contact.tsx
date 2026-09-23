@@ -81,8 +81,8 @@ const Contact: React.FC = () => {
                     <p className="font-semibold text-navy-900 text-sm mb-1">Our Office</p>
                     <p className="text-navy-500 text-sm leading-relaxed">
                       Paradise Global Leisures (PVT) LTD<br />
-                      Habaraduwa, Koggala<br />
-                      Southern Province, Sri Lanka
+                      Kandy &amp; Colombo<br />
+                      Sri Lanka
                     </p>
                   </div>
                 </div>
@@ -94,8 +94,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-navy-900 text-sm mb-1">Phone</p>
-                    <a href="tel:+94770000000" className="text-navy-500 text-sm block hover:text-gold-600 transition-colors">+94 77 000 0000</a>
-                    <a href="tel:+94912000000" className="text-navy-500 text-sm block hover:text-gold-600 transition-colors">+94 91 200 0000</a>
+                    <a href="tel:+94751668705" className="text-navy-500 text-sm block hover:text-gold-600 transition-colors">075 166 8705</a>
                   </div>
                 </div>
 
